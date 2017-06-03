@@ -1,0 +1,111 @@
+/*Not all browsers render a page the same way. You can use a 'reset' or 'normalizer' to ensure your page looks the same in all browsers. Try using the following for this project:*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/*
+Style the given HTML document to match the 'blog' mockup using the following:
+
+Positioning
+Z-index
+Flexbox
+Adjacent values
+
+The fonts are:
+'Josefin Sans', 'Noto Serif', 'Dancing Script'
+
+HINTS:
+- The width of the mockup is 1280px.
+- Try using flexbox to align content. It will make your life easier!
+- To create a parallax effect on the header image, there is a particular value for 'background-attachment' that will help you achieve this effect.
+
+Aligning elements:
+There is more than one way to align an element.
+Flexbox makes aligning a snap.
+For the aside, play around with 'max-height', so that the height adapts to the content.
+*/
+
+body {
+  width: 1280px;
+}
+
+.nav-row {
+  font-family: 'Josefin Sans', sans-serif;
+  height: 80px;
+  background-color: #2E2D2B;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-header {
+  height: 600px;
+  background-image: url(../img/header-img.jpg);
+  background-size: cover;
+  transform: scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 115px;
+  text-align: center;
+}
+
+.sub-heading {
+  font-family: 'Dancing Script';
+  font-size: 88px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 3px #333;
+}
+  
+.blog-row {
+  width: 1150px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FEF9EC;
+  border-left: 2px solid #d3d3d3;
+  border-right: 2px solid #d3d3d3;
+  box-shadow: 0px 3px 4px #333;
+}
+
+.item {
+  
+}
+
+aside {
+  background-color: #EFEADF;
+}
+
+footer {
+  height: 32px;
+  padding-top: 6px;
+  background-color: #333;
+  text-transform: uppercase;
+  color: #EEE;
+  text-align: center;
+}
