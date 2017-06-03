@@ -39,6 +39,7 @@ body {
   width: 1280px;
 }
 
+/* navigation section */
 .nav-row {
   font-family: 'Josefin Sans', sans-serif;
   height: 80px;
@@ -83,6 +84,12 @@ a {
   text-shadow: 3px 3px 3px #333;
 }
   
+/* start of the blog */
+
+main {
+  display: flex;
+}
+
 .blog-row {
   width: 1150px;
   display: flex;
@@ -94,12 +101,36 @@ a {
 }
 
 .item {
-  
+  width: 512px;
+  background-color: #fff;
+  margin-left: 130px;
+  display: flex;
+}
+
+.meta {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  display: inline-flex;
+}
+
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.primary-txt {
+  font-family: 'Noto Serif', serif;
 }
 
 aside {
   background-color: #EFEADF;
+  width: 350px;
 }
+
+.aside-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  border-bottom: 2px solid #555;
+}
+
 
 footer {
   height: 32px;
