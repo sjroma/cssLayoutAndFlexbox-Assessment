@@ -87,7 +87,7 @@ a {
 /* start of the blog */
 
 main {
-  display: flex;
+  display: flex; /* this makes the blog & aside side-by-side */
 }
 
 .blog-row {
@@ -105,6 +105,12 @@ main {
   background-color: #fff;
   margin-left: 130px;
   display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #AAA;
+}
+
+.icon-wrapper {
+  display: flex;
 }
 
 .meta {
@@ -113,12 +119,21 @@ main {
   display: inline-flex;
 }
 
+div {
+  flex-grow: 1;
+}
+
 h4 {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 24px;
 }
 
 .primary-txt {
   font-family: 'Noto Serif', serif;
+}
+
+#dino {
+  background-image: url(../img/dino.jpg);
 }
 
 aside {
@@ -129,6 +144,7 @@ aside {
 .aside-heading {
   font-family: 'Josefin Sans', sans-serif;
   border-bottom: 2px solid #555;
+  font-size: 24px;
 }
 
 
