@@ -1,16 +1,19 @@
 /*Not all browsers render a page the same way. You can use a 'reset' or 'normalizer' to ensure your page looks the same in all browsers. Try using the following for this project:*/
-*, *:before, *:after {
-  box-sizing: border-box;
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 /*
@@ -36,123 +39,202 @@ For the aside, play around with 'max-height', so that the height adapts to the c
 */
 
 body {
-  width: 1280px;
+	width: 1280px;
 }
 
 /* navigation section */
+
 .nav-row {
-  font-family: 'Josefin Sans', sans-serif;
-  height: 80px;
-  background-color: #2E2D2B;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	align-items: center;
+	background-color: #2E2D2B;
+	display: flex;
+	font-family: 'Josefin Sans', sans-serif;
+	height: 80px;
+	justify-content: space-around;
+	list-style-type: none;
+	width: 100%;
 }
 
 .nav-item {
-  text-transform: uppercase;
-  font-size: 15px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#facebook {
+	font-size: 30px;
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 .page-header {
-  height: 600px;
-  background-image: url(../img/header-img.jpg);
-  background-size: cover;
-  transform: scale(1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/*	align-items: center;*/
+	background-image: url(../img/header-img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+/*	display: flex;*/
+	height: 600px;
+/*	justify-content: center;*/
+/*	transform: scale(1);*/
+	width: 100%;
+}
+
+.header-content {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .main-heading {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 115px;
-  text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 150px;
+	margin-top: 170px;
 }
 
 .sub-heading {
-  font-family: 'Dancing Script';
-  font-size: 88px;
-  text-align: center;
-  color: #fff;
-  text-shadow: 3px 3px 3px #333;
+	color: #fff;
+	display: flex;
+	font-family: 'Dancing Script';
+	font-size: 88px;
+	margin-top: -60px;
+	text-shadow: 3px 3px 3px #333;
 }
-  
+
+
 /* start of the blog */
 
 main {
-  display: flex; /* this makes the blog & aside side-by-side */
+/*	this makes the blog & aside side-by-side */
+	background-color: #FEF9EC;
+	box-shadow: 0px 5px 5px 1px #888;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 50px;
+	margin-top: -70px;
+	width: 1154px;
 }
 
 .blog-row {
-  width: 1150px;
-  display: flex;
-  flex-direction: column;
-  background-color: #FEF9EC;
-  border-left: 2px solid #d3d3d3;
-  border-right: 2px solid #d3d3d3;
-  box-shadow: 0px 3px 4px #333;
+/*	border-left: 2px solid #d3d3d3;*/
+/*	border-right: 2px solid #d3d3d3;*/
+/*	box-shadow: 0px 3px 4px #333;*/
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+/*	width: 1150px;*/
 }
 
 .item {
-  width: 512px;
-  background-color: #fff;
-  margin-left: 130px;
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid #AAA;
+	background-color: #fff;
+/*	border: 1px solid #AAA;*/
+	box-shadow: 0px 5px 5px 1px #888;
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	flex-wrap: wrap;*/
+	height: auto;
+	margin: 20px;
+	margin-bottom: 10px;
+	margin-left: 70px;
+	width: 512px;
 }
 
 .icon-wrapper {
-  display: flex;
+	display: flex;
+}
+
+.fa fa-flask {
+	
 }
 
 .meta {
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  display: inline-flex;
+	border-bottom: 2px solid lightgrey;
+	display: inline-flex;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: smaller;
+	text-transform: uppercase;
+}
+
+.date {
+	
+}
+
+.category {
+	
+}
+
+.entry-title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.blog-img {
+	background-size: cover;
+	background-position: center;
+	float: right;
+	height: 250px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+  width: 250px;
 }
 
 div {
-  flex-grow: 1;
-}
-
-h4 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-}
-
-.primary-txt {
-  font-family: 'Noto Serif', serif;
+/*	flex-grow: 1;*/
 }
 
 #dino {
-  background-image: url(../img/dino.jpg);
+	background-image: url(../img/dino.jpg);
+}
+
+#xx {
+	background-image: url(../img/xx.png);
+}
+
+#yhact-img {
+	background-image: url(../img/yhact.jpg)
+}
+
+.primary-txt {
+	font-family: 'Noto Serif', serif;
+	line-height: 2em;
+	padding-left: 16px;
+  padding-right: 15px;
 }
 
 aside {
-  background-color: #EFEADF;
-  width: 350px;
+	background-color: #EFEADF;
+	width: 350px;
+}
+
+.auth-pic {
+	background-image: url(../img/author.jpeg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
 }
 
 .aside-heading {
-  font-family: 'Josefin Sans', sans-serif;
-  border-bottom: 2px solid #555;
-  font-size: 24px;
+	border-bottom: 2px solid #555;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
 }
 
+primary-txt {
+	
+}
 
 footer {
-  height: 32px;
-  padding-top: 6px;
-  background-color: #333;
-  text-transform: uppercase;
-  color: #EEE;
-  text-align: center;
+	background-color: #333;
+	color: #EEE;
+	font-size: 12px;
+	height: 32px;
+	padding-top: 8px;
+	text-align: center;
+	text-transform: uppercase;
 }
