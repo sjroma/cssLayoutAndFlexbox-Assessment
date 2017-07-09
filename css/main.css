@@ -102,7 +102,6 @@ a {
 	text-shadow: 3px 3px 3px #333;
 }
 
-
 /* start of the blog */
 
 main {
@@ -117,22 +116,14 @@ main {
 }
 
 .blog-row {
-/*	border-left: 2px solid #d3d3d3;*/
-/*	border-right: 2px solid #d3d3d3;*/
-/*	box-shadow: 0px 3px 4px #333;*/
 	display: flex;
 	flex-direction: column;
 	margin-top: 40px;
-/*	width: 1150px;*/
 }
 
 .item {
 	background-color: #fff;
-/*	border: 1px solid #AAA;*/
 	box-shadow: 0px 5px 5px 1px #888;
-/*	display: flex;*/
-/*	flex-direction: column;*/
-/*	flex-wrap: wrap;*/
 	height: auto;
 	margin: 20px;
 	margin-bottom: 10px;
@@ -149,15 +140,7 @@ main {
 	
 }
 
-/*
-.meta {
-	border-bottom: 2px solid lightgrey;
-	display: inline-flex;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: smaller;
-	text-transform: uppercase;
-}
-*/
+/* move .meta to .date and .category to get font awesome (fa) to work */
 
 .date {
 	border-bottom: 2px solid lightgrey;
@@ -175,6 +158,7 @@ main {
 	text-transform: uppercase;
 }
 
+/* not working as expected...investigate! */
 i.category:before {
    font-family: FontAwesome;
    content: "\f0c3";
@@ -202,10 +186,6 @@ i.category:before {
   width: 250px;
 }
 
-div {
-/*	flex-grow: 1;*/
-}
-
 #dino {
 	background-image: url(../img/dino.jpg);
 }
@@ -228,6 +208,8 @@ div {
 aside {
 	background-color: #EFEADF;
 	box-shadow: 0px 5px 5px 1px #888;
+	margin-top: 30px;
+	max-height: 1200px;
 	width: 350px;
 }
 
@@ -250,9 +232,6 @@ aside {
 	padding-bottom: 30px;
 	padding-top: 30px;
 	text-align: center;
-  /* width: 75%; */
-  /* display: flex; */
-  /* justify-content: space-around; */
 }
 
 primary-txt {
