@@ -128,11 +128,15 @@ main {
 	margin: 20px;
 	margin-bottom: 10px;
 	margin-left: 70px;
+	position: relative;
 	width: 512px;
 }
 
 .icon-wrapper {
 	display: flex;
+	position: absolute;
+	left: 50%;
+	top: 10px;
 	text-align: center;
 }
 
@@ -141,9 +145,16 @@ main {
 }
 
 /* move .meta to .date and .category to get font awesome (fa) to work */
+.meta {
+	border-bottom: 2px solid lightgrey;
+	margin-left: 10%;
+	width: 80%;
+/*	border: 1px solid black;*/
+}
+
 
 .date {
-	border-bottom: 2px solid lightgrey;
+/*	border-bottom: 2px solid lightgrey;*/
 	display: inline-flex;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: smaller;
@@ -151,21 +162,23 @@ main {
 }
 
 .category {
-	border-bottom: 2px solid lightgrey;
+/*	border-bottom: 2px solid lightgrey;*/
 	display: inline-flex;
+	float: right;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: smaller;
 	text-transform: uppercase;
 }
 
 /* not working as expected...investigate! */
-i.category:before {
+i.category {
    font-family: FontAwesome;
    content: "\f0c3";
    display: inline-block;
+	float: right;
    padding-right: 3px;
    vertical-align: middle;
-   width: 12px;
+   width: 100%;
 }
 
 .entry-title {
